@@ -32,9 +32,7 @@ struct List: Codable {
 //    let wind: Wind
 //    let rain: Rain?
 }
-//struct Clouds: Codable {
-//    let all: Int
-//}
+
 struct MainClass:Codable {
     let temp: Double
     let tempMin: Double
