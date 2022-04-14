@@ -13,14 +13,14 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-          createTabBarcontroller()
+        createTabBarcontroller()
     }
     func createTabBarcontroller () {
         let weatherCurrentVC = WeatherInfoViewController()
-        weatherCurrentVC.title = "Current Weather"
+        weatherCurrentVC.title = "Location"
         
         let weatherTableVC = UINavigationController(rootViewController: WeatherTableViewController())
-        weatherTableVC.title = "Global Weather"
+        weatherTableVC.title = "Forecast"
         
         viewControllers = [weatherCurrentVC, weatherTableVC]
     }

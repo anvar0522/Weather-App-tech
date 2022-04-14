@@ -16,7 +16,6 @@
 		E4A92ACD2805A4B10066B49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A92ACC2805A4B10066B49A /* Assets.xcassets */; };
 		E4A92AD02805A4B10066B49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A92ACE2805A4B10066B49A /* LaunchScreen.storyboard */; };
 		E4A92AD82805AB450066B49A /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A92AD72805AB450066B49A /* WeatherTableViewController.swift */; };
-		E4D9ADCB28083285005E0A4D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D9ADCA28083285005E0A4D /* LocationManager.swift */; };
 		E4D9ADCF28083B2D005E0A4D /* LocationWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D9ADCE28083B2D005E0A4D /* LocationWeatherModel.swift */; };
 		E4D9ADD328084AD1005E0A4D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D9ADD228084AD1005E0A4D /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +34,6 @@
 		E4A92ACF2805A4B10066B49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4A92AD12805A4B10066B49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4A92AD72805AB450066B49A /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
-		E4D9ADCA28083285005E0A4D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E4D9ADCE28083B2D005E0A4D /* LocationWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeatherModel.swift; sourceTree = "<group>"; };
 		E4D9ADD228084AD1005E0A4D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +65,15 @@
 				83567977C641DB7A5B57DE3C /* Pods_Weather_App_tech.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41455132808893800AC6BBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E457E6872805BB7500684D1C /* WeatherModel.swift */,
+				E4D9ADCE28083B2D005E0A4D /* LocationWeatherModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E457E68D2806473300684D1C /* ViewControllers */ = {
@@ -104,8 +111,7 @@
 				E4A92AC32805A4B00066B49A /* AppDelegate.swift */,
 				E457E68D2806473300684D1C /* ViewControllers */,
 				E4D9ADC928083268005E0A4D /* Managers */,
-				E457E6872805BB7500684D1C /* WeatherModel.swift */,
-				E4D9ADCE28083B2D005E0A4D /* LocationWeatherModel.swift */,
+				E41455132808893800AC6BBE /* Models */,
 				E4A92ACC2805A4B10066B49A /* Assets.xcassets */,
 				E4A92ACE2805A4B10066B49A /* LaunchScreen.storyboard */,
 				E4A92AD12805A4B10066B49A /* Info.plist */,
@@ -117,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				E457E6852805BAC300684D1C /* NetworkManager.swift */,
-				E4D9ADCA28083285005E0A4D /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -239,7 +244,6 @@
 				E457E6862805BAC300684D1C /* NetworkManager.swift in Sources */,
 				E457E68A2805DA0C00684D1C /* WeatherInfoViewController.swift in Sources */,
 				E4A92AC42805A4B00066B49A /* AppDelegate.swift in Sources */,
-				E4D9ADCB28083285005E0A4D /* LocationManager.swift in Sources */,
 				E4D9ADD328084AD1005E0A4D /* TabBarViewController.swift in Sources */,
 				E457E6882805BB7500684D1C /* WeatherModel.swift in Sources */,
 				E4A92AD82805AB450066B49A /* WeatherTableViewController.swift in Sources */,

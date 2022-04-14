@@ -15,7 +15,7 @@ class WeatherCell: UITableViewCell {
     var CLb: UILabel = .init()
     var highestTemp: UILabel = .init()
     var lowestTemp: UILabel = .init()
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(countryLb)
@@ -46,12 +46,12 @@ class WeatherCell: UITableViewCell {
     }
     
     func configureHighestTemp(from value: Double) {
-    highestTemp.text = "H:\((Int((Double(value)-273.15))))"
+        highestTemp.text = "H:\((Int((Double(value)-273.15))))"
     }
     func configureLowestTemp(from value: Double) {
         lowestTemp.text = "L:\((Int((Double(value)-273.15))))"
     }
-
+    
     
     
     func configureCountryLb() {
@@ -64,7 +64,7 @@ class WeatherCell: UITableViewCell {
     }
     func configureTimeLb() {
         timeLb.snp.makeConstraints { make in
-            make.top.equalTo(countryLb).inset(30)
+            make.top.equalTo(countryLb).inset(45)
             make.leading.equalToSuperview().inset(17)
         }
         
@@ -78,7 +78,7 @@ class WeatherCell: UITableViewCell {
             make.trailing.equalToSuperview().inset(17)
             
         }
-        }
+    }
     
     func configureHighestTemp() {
         highestTemp.snp.makeConstraints { make in

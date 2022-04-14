@@ -28,7 +28,7 @@ class WeatherInfoViewController: UIViewController, CLLocationManagerDelegate {
         view.backgroundColor = .white
         setConstraints()
         setUpLabels()
-
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -48,10 +48,10 @@ class WeatherInfoViewController: UIViewController, CLLocationManagerDelegate {
         CLb.snp.makeConstraints { make in
             make.top.equalTo(weatherDescription).inset(150)
             make.trailing.equalToSuperview().inset(140)
-            }
-    highestTemp.snp.makeConstraints { make in
-        make.top.equalTo(CLb).inset(100)
-        make.leading.equalToSuperview().inset(75)
+        }
+        highestTemp.snp.makeConstraints { make in
+            make.top.equalTo(CLb).inset(100)
+            make.leading.equalToSuperview().inset(75)
         }
         lowestTemp.snp.makeConstraints { make in
             make.top.equalTo(CLb).inset(100)
@@ -71,7 +71,7 @@ class WeatherInfoViewController: UIViewController, CLLocationManagerDelegate {
         weatherDescription.text = "Загрузка..."
         weatherDescription.font = countryLb.font.withSize(40)
         
-}
+    }
     func setUpLocation() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -104,10 +104,10 @@ class WeatherInfoViewController: UIViewController, CLLocationManagerDelegate {
                 print(error)
             }
         }
-                }
-            }
-extension UIView {
-func addSubviews(_ views: [UIView]) {
-views.forEach(addSubview)
+    }
 }
+extension UIView {
+    func addSubviews(_ views: [UIView]) {
+        views.forEach(addSubview)
+    }
 }
