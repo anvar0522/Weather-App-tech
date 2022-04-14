@@ -8,8 +8,6 @@
 import Foundation
 
 struct WeatherModel: Codable {
-    let cod: String
-    let message, cnt: Int
     let list: [List]?
     let city: City
 }
